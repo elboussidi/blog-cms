@@ -1,0 +1,302 @@
+body{
+	margin-right: 80px;
+	margin-left: 80px;
+	background-image: url(bgg.png);
+}
+#menu{
+background-color: white;
+height: 60px;
+border-radius: 10px;
+}
+#logo{
+float: right;
+font-size: 36px;
+margin: 8px;
+}
+
+#menu ul{
+	float: left;
+	margin-left: 80px;
+
+}
+#menu li{
+list-style: none;
+display: inline-block;
+margin-left:  15px;
+font-size: 18px;
+
+}
+#menu  li a{
+text-decoration: none;
+}
+#menu  li a:hover{
+	margin: 8px;
+border-bottom:2px solid indianred;
+}
+#iimg{
+margin: 0px;
+	width: 100%;
+	border-radius: 10px;
+}
+              /*  man cont post et navbar           
+#man{
+height: auto;
+width: 100%
+
+}   */
+.post{
+	display: block;
+margin: 0px;
+width: 60%;
+background-color: white ;
+float: right;
+margin:5px;
+border-radius: 15px;
+clear: both;
+}
+.sbar{
+width: 35%; 
+background-color: white ;
+float: left;
+margin:5px;
+border-right: 2px #545454 solid ;
+
+}
+.sbar p{
+width: 80% ;
+margin-right: 10% ;
+text-align: justify;
+
+}
+h2{
+	text-align: center; 
+
+}
+
+.imgpost{
+	margin-right: 30px;
+        width: 450px;
+        height: 200px;
+	
+}
+hr{
+	width: 80%;
+        margin-bottom: 20px;
+}
+.dat{
+float: left;
+font-size: 12px;
+margin-bottom: 10px ;
+margin-left: 40px;
+padding: 5px ;
+}
+.autor{
+float: right;
+font-size: 10px;
+margin-right: 40px;
+padding: 5px ;
+}
+.sbar .about{
+	width: 45%;
+	margin-right: 80px;
+}
+
+
+footer{
+	text-align: center; 
+	background-color: white;
+	padding: 20px ;
+	clear: both;
+}
+
+.post p{
+width: 80% ;
+text-align: justify;
+margin-top:  35px;
+margin-right: 50px;
+
+}
+.log{
+
+background-color: white ;
+margin: 5px;
+clear: both;
+border: solid  1px #2DCAF6 ;
+border-radius: 5px; 
+
+}
+.log img{
+	margin-right: 70px;
+	margin-bottom: 10px;
+	width: 40%;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+input {
+width: 50% ;
+border-radius: 3px;
+height: 25px;
+font-size: 16px;
+
+}                       
+.sub{
+	background-color: #f49e23 ;
+	width: 40% ;
+    border-radius: 3px;
+	height: 25px;
+	font-size: 16px;
+
+}
+form{
+	text-align: center;
+	margin-bottom: 30px;
+line-height: 1.5 ;
+font-size: 16px;
+}
+.log input:focus{
+	border: solid 1px #2DCAF6; color:
+}
+.inp{
+margin: 5px;
+width: 65%;
+border-radius: 5px;
+height: 25px;
+
+}
+/*------------ admin/index.php  ------------------*/
+.admin{
+	text-align: center;
+	margin: 60px;
+	pad
+}
+.prof{
+ width: 30%;
+ height: 150px ;
+ background-color: white ;
+ margin: 20px;
+ padding: 17px;
+ border-radius: 6px;
+ border: solid 1px cornflowerblue ;
+}
+
+.btn{
+	width: 130px;
+	height: 28px;
+	margin: 18px;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 5px;
+	border: solid 1px tomato ;
+}
+.prof .btn2{
+    width: 130px;
+	height: 28px;
+	font-size: 16px;
+border-radius: 5px;
+border: solid 1px ;
+margin-bottom: 7px;
+background-color: white;
+margin-top: 40px;
+}
+.prof img{
+	width: 90px;
+	float: right;
+}
+.prof h3{
+	float: left;
+	margin-top: 40px;
+}
+.btn:hover{
+	color:  cornflowerblue;
+	font-size: 17px;
+}
+.btn2:hover{
+	padding: 6px;
+	border: solid 1px tomato ;
+}
+/*        add-post*/
+.addpost{
+	width: 80%;
+	height: 510px;
+	background-color:white;
+	text-align: center;
+	margin-right: 10%;
+	border-radius: 6px;
+	padding: 10px;
+	margin-top:15px;
+	line-height: 2;
+}
+.addpost textarea{
+	width: 90%;
+	height: 320px;
+	border-radius: 5px;
+	border:solid 2px brown;
+	margin: 10px;
+}
+.addpost h2 {
+	margin: 0px;
+}
+
+.in2{
+width: 260px;
+height: 25px;
+border-radius: 4px;
+border:solid 1px black;
+padding: 3px;
+background-color: white ;
+font-size: 16px;
+margin: 5px;
+}
+.in3{
+	width: 100px;
+height: 28px;
+border-radius: 4px;
+border:solid 1px black;
+padding: 5px;
+background-color: white ;
+font-size: 18px;
+margin: 5px;
+color: 
+}
+.in3:hover{
+border:	black 2px solid;
+}
+a.next{
+    color: brown;
+    margin-left: 5px ;
+  margin-top: 10px;
+    text-decoration: none;
+   
+    font-size: 16px;
+    height: 50px;
+    
+}
+.yes{
+  font-size: 24px;
+  padding: 7px;
+  margin: 7px;
+  margin-right: 10%;
+  width: 80%;
+  background-color: white;
+  text-align: center;
+  color: limegreen ;
+  border:2px  solid darksalmon ;
+    
+}
+
+.addadmin .in{
+width: 200px;
+border-radius: 4px;
+border:solid 1px black;
+font-size: 18px;
+margin: 5px;
+
+}
+.addadmin{
+line-height: 3;
+font-size: 18px;
+
+}
+.addadmin h2{
+	text-align: center;
+}
