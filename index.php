@@ -4,8 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>الصفحة الرئسية</title>
+    <title>الصفحة الرئسية </title>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" media="screen" href="all.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+
 </head>
 
 <?php include'headr.php' ?>
@@ -71,13 +77,14 @@ if(!$reedqr){
 } else {   
     echo ' <div class="post">';
  while ($row = mysqli_fetch_assoc($reedqr)) {
+       $id=$row['id'];
     $title1=$row['title'];
     $post1=$row['post'];
     $img1=$row['img'];
     $autor1=$row['autor'];
     $dat1=$row['dat add']; 
 $newdat=mb_substr( "$dat1 " , 0 , 11 , "utf8" );
-
+$newpost=mb_substr( "$post1 " , 0 , 180 , "utf8" );
     echo "
 
 
@@ -86,8 +93,9 @@ $newdat=mb_substr( "$dat1 " , 0 , 11 , "utf8" );
       <div class='dat'>$newdat </div>
       <div class='autor'>كتب بواسطة : $autor1</div>
       <p>
-       $post1
-      </p>
+       $newpost
+      </p> 
+      <a href='single.php?id=$id'><button class='btn' >  المزيد </button></a>
       <hr>  
   
 
@@ -134,7 +142,7 @@ $total=mysqli_num_rows($qry);
 
   </div>
 <div class="sbar">
-     <h2>نبدة عني </h2>
+     <h2>نبدة عني </h2> 
      <img src="moi.jpg" class="about">
      <p> We are an emerging Business leader in the field of
          IoT and Cognitive Technology with a noble mission
@@ -164,10 +172,12 @@ else{
   ?>  
   <img  src="log.png">
 <form method="POST" action="" >
+    <i class="fas fa-at"></i>
       البريد الالكتروني <br>
-      <input class="inp" type="email" name="email"><br>
+      <input class="inp" type="email" name="email"  required ><br>
+       <i class="fas fa-unlock"></i> 
       كلمة المرور <br>
-      <input class="inp" type="password" name="password"><br>
+      <input class="inp" type="password" name="password" required><br>
       <input class="sub" type="submit" name="log" value="دخول">
 </form>
  
@@ -181,5 +191,6 @@ else{
  </div>
 
 <?php  include'footer.php' ?>
+ >
 </body>
 </html>

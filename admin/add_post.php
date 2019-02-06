@@ -8,7 +8,11 @@
     <title>مقال جديد</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../all.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
 <body>
   
@@ -58,7 +62,7 @@ if($lev !=1){
   صورة المقال <input class="file" type="file" name="file"><br>
   <textarea name="post"> </textarea><br>
   الكاتب <input class="in2"type="text" name="autor"><br>
-   <input class="in3" type="submit" name="submit2" value="نشر">
+   <input class="in3" type="submit" name="submit2" value="نشر"class="fas fa-location-arrow">  
   
 </form>
 </div>

@@ -1,4 +1,13 @@
+/*@font-face  {
+font-family: 'majid';
+src: url('fonte/majidd.otf');
+font-weight: 400;
+font-style: normal;
+}*/
+
 body{
+   
+
 	margin-right: 80px;
 	margin-left: 80px;
 	background-image: url(bgg.png);
@@ -7,11 +16,14 @@ body{
 background-color: white;
 height: 60px;
 border-radius: 10px;
+font-family: 'Cairo', sans-serif; 
 }
 #logo{
 float: right;
 font-size: 36px;
 margin: 8px;
+
+ font-family: 'Lateef', cursive;
 }
 
 #menu ul{
@@ -53,6 +65,7 @@ float: right;
 margin:5px;
 border-radius: 15px;
 clear: both;
+font-family: 'Lateef', cursive;
 }
 .sbar{
 width: 35%; 
@@ -66,7 +79,7 @@ border-right: 2px #545454 solid ;
 width: 80% ;
 margin-right: 10% ;
 text-align: justify;
-
+font-family: 'Lateef', cursive;
 }
 h2{
 	text-align: center; 
@@ -299,4 +312,101 @@ font-size: 18px;
 }
 .addadmin h2{
 	text-align: center;
+}
+i{
+    background-color: activecaption ;
+}
+
+/* single style */
+
+.single{
+	text-align: center;
+	background-color: white ;
+	width: 95%;
+	height: auto;
+	margin-top: 20px;
+	padding: 20px ;
+}
+.single p{
+	  line-height: 2;
+	  text-align: justify;
+	  width: 96%;
+	  font-size: 18px;
+margin-right: 20px;
+}
+.single img{
+	width: 500px;
+	height: 250px;
+}
+.single .aut{
+	float: right;
+	margin-top:80px;
+	margin-right: 20px;
+	font-size: 17px;
+}
+/*  edit posts */
+
+.po{
+
+	text-align: center;
+}
+table{
+	border-collapse: collapse;
+	width: 90%;
+	
+}
+table tr td {
+	padding: 4px;
+	width: auto;
+}
+
+/*    post list style */
+
+table{
+    background-color: white;
+	border-collapse: collapse;
+	width: 90%;
+	text-align: center;
+}
+table tr td {
+	padding: 4px;
+	width: auto;
+}
+table .btnd{
+font-size: 16px;
+padding: 5px;
+color: #fa6aeb;
+text-decoration: none;
+}
+table .btnm{
+font-size: 16px;
+padding: 5px;
+color:#5fcfd0 ;
+text-decoration: none;
+}
+table .btnd:hover{
+border: solid 1px  #fa6aeb ;
+
+}
+table .btnm:hover{
+border: solid 1px  #5fcfd0  ;
+}
+table .id{
+	width: 10px;
+}
+table .ti{
+	width: 180px;
+}
+table .au{
+
+	width: 80px;
+}
+
+table .del{
+
+	width: 25px;
+}
+
+table .mod{
+	width: 25px;
 }
