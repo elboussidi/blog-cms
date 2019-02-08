@@ -88,8 +88,8 @@ $newpost=mb_substr( "$post1 " , 0 , 180 , "utf8" );
     echo "
 
 
-         <h2>$title1  </h2>
-      <img class='imgpost' src='$img1'>
+      <a href='single.php?id=$id'>   <h2>$title1  </h2></a>
+    <a href='single.php?id=$id'>  <img class='imgpost' src='$img1'></a>
       <div class='dat'>$newdat </div>
       <div class='autor'>كتب بواسطة : $autor1</div>
       <p>
@@ -181,9 +181,6 @@ else{
       <input class="sub" type="submit" name="log" value="دخول">
 </form>
  
-
-
-
  <?php } ?>
 
  </div>
@@ -191,6 +188,6 @@ else{
  </div>
 
 <?php  include'footer.php' ?>
- >
+
 </body>
 </html>

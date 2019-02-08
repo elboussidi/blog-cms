@@ -48,6 +48,7 @@ if($lev !=1){
     }
  else {
         echo '<div class="yes">تمت اضافة المقال  بنجاح </div>';
+      //  echo 'meta http-equiv="refresh" content="3 ; \'index.php\'" />' ;
     }
     }
     
