@@ -20,6 +20,7 @@
     session_start();
 if(isset($_SESSION['lev'] )){
 $lev=$_SESSION['lev'];
+$autor=$_SESSION['name'];
 
 }
 if($lev !=1){
@@ -29,7 +30,7 @@ if($lev !=1){
     if(isset($_POST['submit2'])){
         $title=$_POST['title'];
          $post=$_POST['post'];
-          $autor=$_POST['autor'];
+          
        
      
          $path='http://localhost/blog/img/'.$_FILES['file']['name'];
@@ -61,7 +62,7 @@ if($lev !=1){
   عنوان المقال <input class="in2"type="text" name="title"><br>
   صورة المقال <input class="file" type="file" name="file"><br>
   <textarea name="post"> </textarea><br>
-  الكاتب <input class="in2"type="text" name="autor"><br>
+<!--  الكاتب <input class="in2"type="text" name="autor"><br>-->
    <input class="in3" type="submit" name="submit2" value="نشر"class="fas fa-location-arrow">  
   
 </form>

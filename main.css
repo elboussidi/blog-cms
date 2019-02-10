@@ -410,3 +410,34 @@ table .del{
 table .mod{
 	width: 25px;
 }
+
+.com{
+	width: 90% ;
+	background-color: #ffffff;
+	height: auto;
+	margin-right: 6%;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+}
+.out{
+	width: 93% ;
+	background-color: #b3ece370;
+	height: auto;
+	margin-right: 6%;
+	padding: 15px;border-radius: 8px;
+	margin: 15px;
+}
+.comtxt{
+	font-size: 18px;
+	width: 80% ;
+	background-color: #fdfdfd;
+	height: 200px;
+	}
+.sub {
+    background-color: #f49e23;
+    width: 20%;
+    border-radius: 3px;
+    height: 35px;
+    font-size: 18px;
+}
