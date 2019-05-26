@@ -36,22 +36,30 @@ if($lev !=1){
          $path='http://localhost/blog/img/'.$_FILES['file']['name'];
       $dir="../img/".$_FILES['file']['name'];
         move_uploaded_file($_FILES['file']['tmp_name'],$dir);
-        
-        
+        if($post == ""){
+            
+  
      $insert="INSERT INTO `posts` 
          (`id`, `title`, `img`, `post`, `autor`, `dat add`)
            VALUES 
-          ('','$title',' $path', '$post', '$autor', CURRENT_TIMESTAMP)";
-        
+          ('','$title',' $path', '$post', '$autor', CURRENT_TIMESTAMP)
+          ";
+     
    $query= mysqli_query($conect,$insert);
                if(!$query){
-                   die("لم يتم النشر") ;
+   
+                   die("لم يتم النشر" . mysqli_error($conect) );
     }
  else {
-        echo '<div class="yes">تمت اضافة المقال  بنجاح </div>';
+        echo '<div class="yes">تمت اضافة المقال  بنجاح جاري تحويلك للرئيسة </div>';
+         echo '<meta http-equiv="refresh" content="3; \'../index.php\' /> " ';
     }
-    }
-    
+   }
+   
+ else {
+       echo '<div class"no"> لايمكن ترك حل المقال فارغ </div>';   
+   }
+     }
     ?>
     
     
@@ -59,9 +67,9 @@ if($lev !=1){
 <div class="addpost">
   <h2> اصافة مقال جديد </h2>
   <form method="POST" action="" enctype="multipart/form-data" >
-  عنوان المقال <input class="in2"type="text" name="title"><br>
-  صورة المقال <input class="file" type="file" name="file"><br>
-  <textarea name="post"> </textarea><br>
+      عنوان المقال <input class="in2"type="text" name="title" required><br>
+  صورة المقال <input class="file" type="file" name="file" required><br>
+  <textarea name="post" > </textarea><br>
 <!--  الكاتب <input class="in2"type="text" name="autor"><br>-->
    <input class="in3" type="submit" name="submit2" value="نشر"class="fas fa-location-arrow">  
   

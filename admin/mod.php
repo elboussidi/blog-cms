@@ -59,6 +59,10 @@ if(!$reedqr2){
 
   <textarea name='post2' >$post2 </textarea><br>
   الكاتب <input class='in2' type='text' name='autor2' value='$autor2'><br>
+      <select name='status' >
+       <option>pub</option>
+        <option selected>no pub</option>
+      </select><br>
    <input class='in3' type='submit' name='updat' value='تحديث' >  
   
 
@@ -68,10 +72,11 @@ if(!$reedqr2){
   $ntitle=$_POST['title2'] ;
    $npost=$_POST['post2'] ;
     $nautor=$_POST['autor2'] ;
+      $status=$_POST['status'] ;
     
    $up=" UPDATE `posts` SET 
           `title`='$ntitle',
-           `post`='$npost',`autor`='$nautor' WHERE `id`=$idmod  ";
+           `post`='$npost',`autor`='$nautor' ,`status`='$status'WHERE `id`=$idmod  ";
     if(mysqli_query($conect, $up))    {
 
       header("location:posts.php");   
@@ -83,8 +88,6 @@ if(!$reedqr2){
     ?>
  
 
-   
-    
     </form> </div>
     
 

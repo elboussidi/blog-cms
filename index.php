@@ -11,13 +11,31 @@
 
 
 
-
 </head>
 
 <?php include'headr.php' ?>
-<img src="logo.png" id="iimg">
+<img src="img/logo2019.png" id="iimg">
+<div id="ma">
 
+    <?php 
+// $mark="SELECT * FROM `posts` ";
+//    
+//    $marksql=$conect->query($mark) ;
+//    
+//    if($marksql){
+//         if($marksql->num_rows > 0);
+//        while ($row3 = $marksql->fetch_assoc()) {
+//     
+//            $mm=$row3['title'];
+//            echo $mm;
+//        } 
+//     }
+//    
+   ?> 
+    <!--echo  " <marquee id='ab'>     </marquee>";-->
 <?php 
+
+
 if(isset($_POST['log'])){
   $email=$_POST['email'];
   $pass=$_POST['password'];
@@ -38,8 +56,10 @@ if(isset($_POST['log'])){
    
       
         if ($_SESSION['lev']==1){
-              
-  header("location:/blog/admin/index.php");
+         echo '  <div class="yes"> <img style=" width: 50px ;
+    height: 35px ;" src="anim.gif" /> تم تسجيل دخولك   بنجاح  جاري تحويلك لادارة الموقع</div>';
+               echo '<meta http-equiv="refresh" content="4; \'/blog/admin/index.php\' /> " ';
+ // header("location:/blog/admin/index.php");
         } }
  else {
    
@@ -69,7 +89,7 @@ if(isset($_GET['page'])){
   }
 $star=$p_page*$page-$p_page ;
 
-$reed="SELECT * FROM `posts` ORDER by `id` DESC LIMIT {$star},{$p_page } ";
+$reed="SELECT * FROM `posts` WHERE `status`='pub'  ORDER by `id` DESC LIMIT {$star},{$p_page }  ";
 $reedqr= mysqli_query($conect, $reed);
 if(!$reedqr){
     die("تعدر الوصول الي المقالات");
@@ -100,6 +120,7 @@ $newpost=mb_substr( "$post1 " , 0 , 180 , "utf8" );
   
 
 ";
+
 } }//end while and else
 $sel="SELECT * FROM `posts`";
 $qry= mysqli_query($conect, $sel);
@@ -130,7 +151,7 @@ $total=mysqli_num_rows($qry);
         if($page>1){
      $perv=$page-1;
      ?> 
-          
+         
 <a class="next" href="?page=<?php echo $perv ?>& p_page=<?php echo$p_page?>"> السابق<a/>
     
   <?php   
@@ -191,6 +212,6 @@ else{
  </div>
 
 <?php  include'footer.php' ?>
- >
+
 </body>
 </html>

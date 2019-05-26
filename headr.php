@@ -3,7 +3,7 @@
 <body dir="rtl">
 
   <div id="menu">
-    <div id="logo">  البوسعيدي  </div>
+   
     <ul>
     <li> <a href="http://localhost/blog/index.php">     <i class="fas fa-home"></i>  الرئيسية </a></li>
     <li> <a href="#"> من نحن     </a></li>

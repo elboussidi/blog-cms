@@ -30,6 +30,7 @@ if($lev !=1){
                <td>#</td>
                <td>العنوان</td>
                <td>الكاتب</td>
+               <td>الحالة</td>
                <td>حدف</td>
                <td>تعديل</td>
              </tr>
@@ -44,6 +45,7 @@ if($lev !=1){
                 $ti=$row2['title'];
                 $id=$row2['id'];
                 $aut=$row2['autor'];
+                $status=$row2['status'];
                  $tot= mysqli_num_rows($sq);
                 
  
@@ -54,7 +56,8 @@ if($lev !=1){
                <td class='id' >$id</td>
                <td class='ti' >$ti</td>
                <td class='au' >$aut</td>
-                 <td class='del'><a href='/blog/admin/del.php?id=$id' class='btnd' >  حدف 
+                     <td class='au' >$status</td>
+                 <td class='del'><a href='/blog/admin/del.php?id3=$id' class='btnd' >  حدف 
        </a></td>
 
        <td class='mod'><a href='/blog/admin/mod.php?id=$id' class='btnm' >  تعديل </a></td>

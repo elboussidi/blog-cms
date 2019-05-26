@@ -52,7 +52,8 @@ if(!$sqlsingle){
 }}}
 ?>
       <div class="com">
-        <h2> comont </h2>
+     <hr>
+   
       <?php 
       if(isset($_POST['send'])){
           $ncom=$_POST['autcom'];
@@ -75,7 +76,7 @@ if(!$sqlsingle){
               $autname=$row1['autcom'];
                $com=$row1['com'];
                if(empty($autname)){
-                   $autname=" aucan author";
+                   $autname=" مجهول";
                }
                echo "
               
@@ -96,22 +97,22 @@ if(!$sqlsingle){
           
       }
       
+      
       ?>
-       
-
-<hr>
-<h2> add comont </h2>
+  <h2> التعليقات </h2>
  <br>
  <form method="POST">
- your name : <input type="text" name="autcom"/><br><br>
-  your com :
+     الاسم الكريم : <br><input type="text" name="autcom"/><br><br>
+  تعليقك:<br>
   <textarea name="com" class="comtxt">
 
  </textarea>
 <br><br>
-<input class="sub" type="submit" name="send" value="add com"/>
+<input class="sub" type="submit" name="send" value="تعليق"/>
  </form>
-</div
+</div     
+
+
       
       
   </body>

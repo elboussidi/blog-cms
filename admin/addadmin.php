@@ -29,16 +29,18 @@ if($lev !=1){
     if(isset($_POST['add'])){
        $aname=$_POST['name'];
       $aemail=$_POST['email'];
-   $apass=$_POST['pass'];
+   $apass=md5($_POST['pass']);
       
    $aadmin="INSERT INTO `admin` 
           (`id`, `name`, `email`, `password`) 
           VALUES
-            ('', '$aname', '$aemail', '$apass')";
+            ('', '$aname', '$aemail', ' $apass')";
    $qty=mysqli_query($conect, $aadmin);
    
    if($qty){
-       echo ' <div class="yes"> تم الاضافة بنجاح</div>';
+     //  header("location:lsadmin.php");
+      echo ' <div class="yes"> تمت الاضافة بنجاح , جاري تحويلك الي صفحةادارة الاعضاء</div>';
+      echo '<meta http-equiv="refresh" content="3; \'lsadmin.php\' /> " ';
     }  
     }  
     ?>

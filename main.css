@@ -5,12 +5,13 @@ font-weight: 400;
 font-style: normal;
 }*/
 
+
 body{
    
 
 	margin-right: 80px;
 	margin-left: 80px;
-	background-image: url(bgg.png);
+	/*background-image: url(bgg.png);*/
 }
 #menu{
 background-color: white;
@@ -296,6 +297,17 @@ a.next{
   border:2px  solid darksalmon ;
     
 }
+.no{
+  font-size: 24px;
+  padding: 7px;
+  margin: 7px;
+  margin-right: 10%;
+  width: 80%;
+  background-color: white;
+  text-align: center;
+  color: crimson;
+  border:2px  solid wh ;  
+}
 
 .addadmin .in{
 width: 200px;
@@ -440,4 +452,10 @@ table .mod{
     border-radius: 3px;
     height: 35px;
     font-size: 18px;
+}
+/* marqer  */
+#ab {
+	background-color: white;
+	margin:20px ;
+	padding:10px;
 }

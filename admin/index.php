@@ -45,6 +45,8 @@ $profil=$_SESSION['name'];
    <a href="posts.php"><button class="btn"> تحرير  </button> </a><br><br><br><br>
    <a href="#"><button class="btn" class="fas fa-cogs"> اعدادات <i class="fas fa-cogs"></i> </button> </a>
    <a href="add_post.php"><button class="btn" >  مقال جديد </button></a>
+   <a href="lsadmin.php"><button class="btn" >  اعضاء </button></a>
+   <a href="mangcom.php"><button class="btn" > ادارة التعليقات </button></a>
 
  </div>
  <?php include'../footer.php' ?>
